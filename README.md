@@ -221,8 +221,11 @@ You can express your gratitude, indignation or constructive wishes to me using t
 Email: ap@custom-apps.pro
 
 My profiles:
+
 Linkedin: https://www.linkedin.com/in/andrewpokora/
+
 Github: https://github.com/andrewpokora
+
 Twitter: https://twitter.com/andrewpokora
 
 Also, you can say nothing, but just buy me a coffee :) 
