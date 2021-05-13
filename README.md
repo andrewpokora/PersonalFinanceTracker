@@ -27,7 +27,7 @@ Please note that the main reporting period is the month. This is not always the 
 - Contacts
 - Change Log
 
-##Change Log
+## Change Log
 - new function of splitting transactions added. For example, if you have a check from a supermarket with different many items with different categories (groceries, cosmetics, books etc), you can create one transaction for this check, but divide all expenses between different categories.
 - Reports layout changed 
 - added new report "Expenses by main categories only"
