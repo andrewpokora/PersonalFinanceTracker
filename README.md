@@ -34,10 +34,13 @@ Please note that the main reporting period is the month. This is not always the 
 - added new report "Expenses by the payee"
 - the Budget report has been changed - now, the user can overlay existing transactions for any selected month and compare them with the specified budget target
 - added the ability to sort Accounts 
+- added automatic login for a user without full access for ease of use. You can log in as an administrator at any time to make changes. 
 - bug fixes and minor improvements
 
 
 ## Credentials
+
+For [Full Access], choose Script Menu, Choose "Re-login" and use next credentials:
 '''
 Login = Admin
 Password = 12345
