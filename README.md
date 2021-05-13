@@ -1,9 +1,7 @@
-# Read Me first
+# PersonalBudgetTracker Read Me
+13 May 2021 Revision: 1.2
 
-19 April 2021 Revision: 1.0
-
-## Overview
-
+## Description
 PersonalBudgetTracker is a simple personal budget tracker to track your finances. To work with it, you need FileMaker version 14 or higher.
 
 Please keep in mind that I started out making this tracker as a pet project, for my own pleasure and my personal goals. Perhaps my perspective on how to account for personal finances is different from yours. This is normal. 
@@ -13,7 +11,7 @@ Also, I wanted to keep the application as simple as possible. Therefore, it lack
 Please note that the main reporting period is the month. This is not always the case in the real world, and it is not always convenient - but, again, this is a SIMPLE tracker. Perhaps later, in the future, I will add the ability to build reports for an arbitrary period. Perhaps it will be a very distant future.
 
 ## Content
-
+- Change Log
 - Credentials
 - Getting Started
 - Settings
@@ -27,16 +25,27 @@ Please note that the main reporting period is the month. This is not always the 
 - Reports
 - Other things
 - Contacts
+- Change Log
+
+##Change Log
+- new function of splitting transactions added. For example, if you have a check from a supermarket with different many items with different categories (groceries, cosmetics, books etc), you can create one transaction for this check, but divide all expenses between different categories.
+- Reports layout changed 
+- added new report "Expenses by main categories only"
+- added new report "Expenses by the payee"
+- the Budget report has been changed - now, the user can overlay existing transactions for any selected month and compare them with the specified budget target
+- added the ability to sort Accounts 
+- bug fixes and minor improvements
+
 
 ## Credentials
-
+'''
 Login = Admin
 Password = 12345
+'''
 
 After you open the file firstly, you will be prompted to change your password.
 
 ## Getting Started
-
 The file contains several test transactions, accounts, categories, and the like. This allows you to quickly familiarize yourself with how it works and understand if it is right for you. Also, you may find it easier to change existing categories and accounts than to create new ones. After reviewing, you can delete all test data and add your own from scratch.
 
 However, to enter transactions and receive reports, you must have specified the following entities:
@@ -49,7 +58,6 @@ It is preferable to create them in that order.
 Once opened, the file always opens the Dashboard layout. This is a simple layout that contains only two charts - how much income the user has in the current month and how much they spend.
 
 ## Settings
-
 In this layout, you see only four buttons. Below is a description of each of them.
 
 ### Get ReadMe
@@ -58,11 +66,11 @@ Get this ReadMe.md file. It will be exported to your desktop. You can open it in
 ### Profile of developer
 Open developer profile in a browser. This will help you contact me.
 
-### Delete Sample Data w / o Categories
-Delete all sample data excluding categories. Categories will not be deleted! This procedure has no rollback! After the test data is deleted, the button will no longer be active.
+### Delete Sample Data w/o Categories
+Delete all sample data _excluding_ categories. Categories will not be deleted! This procedure has no rollback! After the test data is deleted, the button will no longer be active.
 
 ### Delete All Data with Categories
-Remove everything including categories. This procedure has no rollback! After the test data is deleted, the button will no longer be active.
+Remove everything _including_ categories. This procedure has no rollback! After the test data is deleted, the button will no longer be active.
 
 ### Why I have 2 buttons for deleting sample data instead of 1?
 I did this because adding categories personally seems to me quite boring and annoying - therefore, it always seemed easier to me to slightly edit existing ones than to introduce them completely from scratch. Therefore, the user might want to delete all test data - but leave the categories.
@@ -74,7 +82,6 @@ To make transactions, you need accounts. Money does not exist on its own - it ca
 You cannot delete an account if there are transactions for it.
 
 ## Categories
-
 Here you can enter categories for both expenses and income. Also, you can set the so-called. Parent category. For example, you created a Hobby category, type - expenses, and did not select anything for it as a parent. In this case, this is the parent category. Then, you created the Steam Games category, the type is expenses and selected Hobbies as the parent category for it. Thus, you have the following hierarchy:
 
 Expenses
@@ -85,26 +92,22 @@ You cannot delete a category if transactions exist for it. First, you need to de
 
 
 ## Currencies
-
 You can use multiple currencies for your budget. For example, pocket money in dollars, an account or a card in euros. Each account or transaction can be attributed to one, and only one, currency. However, you can set one currency as Primary. In this case, if you have set currency rates, you can see all transactions and all account balances in this currency. They will be recalculated automatically.
 
 You cannot delete the currency associated with an account for which transactions have already been created.
 
 ## Rates
-
 Someday I will make automatic retrieval of currency rates using the REST API. Someday - but not today. Today, if you use several currencies, you need to set the rate of the second currency in relation to the main one to display the data correctly.
 
 ## Transactions
-
 Shows transactions on your accounts. Allows you to add, edit or delete transactions.
 
 ### Create a transaction
-
 Click the New Transaction button.
 
 The date and time of the transaction will be set automatically and are subject to change. Please note - if you click on the calendar symbol on the left, the date will be set to the current one.
 
-Select the type of transaction - Income, Expenses, Transfer (between your accounts)
+Select the type of transaction - Income, Expenses, Transfer (between _your_ accounts)
 
 Select the account for which the transaction will be created. After the account is selected, the balance of funds on this account in its currency will be displayed next to it.
 
@@ -113,6 +116,8 @@ If we are talking about a Transfer, you will need to select your account to whic
 Enter the amount. If you make expenses, there is no need to put a minus, it will be indicated automatically later.
 
 Select a category. You can use the filter at the top left of the window to quickly find the category you want. Just click on the selected category - it will change its colour - and confirm your choice.
+
+*New feature* Now you can split Transactions for differents Categories. Click "Split" button, enter Amount and choose Category for every subtransaction.
 
 You can add a payer or notes if needed.
 
@@ -214,18 +219,16 @@ And so starting from this month for a year ahead.
 
 This way, you can see how your spending or income plans affect your account balances and better plan for your future.
 
-## Contacts
+## Thank You
+Thanks for using this app and I hope you find it as useful as I do!
 
 You can express your gratitude, indignation or constructive wishes to me using the following contacts:
 
 Email: ap@custom-apps.pro
 
 My profiles:
-
 Linkedin: https://www.linkedin.com/in/andrewpokora/
-
 Github: https://github.com/andrewpokora
-
 Twitter: https://twitter.com/andrewpokora
 
 Also, you can say nothing, but just buy me a coffee :) 
