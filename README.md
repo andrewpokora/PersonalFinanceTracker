@@ -246,4 +246,4 @@ My profiles:
 - Upwork: https://www.upwork.com/freelancers/~0170e6a99becac6e5c
 
 Also, you can say nothing, but just buy me a coffee :) 
-https://www.buymeacoffee.com/andriipokora
+- https://www.buymeacoffee.com/andriipokora
