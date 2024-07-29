@@ -243,7 +243,7 @@ Email: ap@custom-apps.pro
 My profiles:
 - Linkedin: https://www.linkedin.com/in/andrewpokora/
 - Github: https://github.com/andrewpokora
-- Twitter: https://twitter.com/andrewpokora
+- Upwork: https://www.upwork.com/freelancers/~0170e6a99becac6e5c
 
 Also, you can say nothing, but just buy me a coffee :) 
 https://www.buymeacoffee.com/andriipokora
