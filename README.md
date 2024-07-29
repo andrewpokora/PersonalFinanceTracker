@@ -1,14 +1,14 @@
-# PersonalBudgetTracker Read Me
-13 May 2021 Revision: 1.2
+# PersonalFinanceTracker Read Me
+28 Jule 2024 Revision: 1.3
 
 ## Description
-PersonalBudgetTracker is a simple personal budget tracker to track your finances. To work with it, you need FileMaker version 14 or higher.
+PersonalFinanceTracker is a simple personal budget tracker to track your finances. To work with it, you need FileMaker version 14 or higher.
 
-Please keep in mind that I started out making this tracker as a pet project, for my own pleasure and my personal goals. Perhaps my perspective on how to account for personal finances is different from yours. This is normal. 
+Please keep in mind that I started out making this tracker as a pet project, for my own pleasure and my personal goals. Perhaps my perspective on how to account for personal finances is different from yours or even not right. 
 
-Also, I wanted to keep the application as simple as possible. Therefore, it lacks some functions (complex, relatively laborious, but rarely used by me) that are in other systems. I have not tried to make the best product of all time, suitable for everyone. I did it primarily for myself - on my weekends and in my free time. Perhaps in the future, I will add some new features to this project. This is all the more likely the more good responses I get. So, follow my profiles on social networks for news.
+Also, I wanted to keep the application as simple as possible. Therefore, it lacks some functions (complex, relatively laborious, but rarely used by me) that are in other systems. I have not tried to make the best product of all time, suitable for everyone. I did it primarily for myself - on my weekends and in my free time.
 
-Please note that the main reporting period is the month. This is not always the case in the real world, and it is not always convenient - but, again, this is a SIMPLE tracker. Perhaps later, in the future, I will add the ability to build reports for an arbitrary period. Perhaps it will be a very distant future.
+Please note that the main reporting period is the month. This is not always the case in the real world, and it is not always convenient - but, again, this is a SIMPLE tracker.
 
 ## Content
 - Change Log
@@ -28,7 +28,15 @@ Please note that the main reporting period is the month. This is not always the 
 - Change Log
 
 ## Change Log
-- new function of splitting transactions added. For example, if you have a check from a supermarket with different many items with different categories (groceries, cosmetics, books etc), you can create one transaction for this check, but divide all expenses between different categories.
+
+#v.1.3
+- bugfixes
+- the layouts have been redesigned to work on iPad (at least in landscape orientation)
+- The interface has become a bit simpler. 
+- Several reports that were not working correctly have been removed. For example, the budget forecast. I know why it was not working correctly. However, I do not use this report, and it was easier for me to remove it than to fix it. 
+
+#v.1.2
+- a new function of splitting transactions added. For example, if you have a check from a supermarket with different many items with different categories (groceries, cosmetics, books etc), you can create one transaction for this check, but divide all expenses between different categories.
 - Reports layout changed 
 - added new report "Expenses by main categories only"
 - added new report "Expenses by the payee"
@@ -37,14 +45,18 @@ Please note that the main reporting period is the month. This is not always the 
 - added automatic login for a user without full access for ease of use. You can log in as an administrator at any time to make changes. 
 - bug fixes and minor improvements
 
+#v.1.0
+- release
 
 ## Credentials
 
-For [Full Access], choose Script Menu, Choose "Re-login" and use next credentials:
+For [Full Access], choose Script Menu, Choose "Re-login" and use the next credentials:
 '''
 Login = Admin
 Password = 12345
 '''
+
+Or, alternatively, hold down the "Option" key (Mac) or "Shift" key (Windows) while opening the file.
 
 After you open the file firstly, you will be prompted to change your password.
 
@@ -67,7 +79,7 @@ In this layout, you see only four buttons. Below is a description of each of the
 Get this ReadMe.md file. It will be exported to your desktop. You can open it in any text editor, but it's better to use a markdown-enabled editor.
 
 ### Profile of developer
-Open developer profile in a browser. This will help you contact me.
+Open the developer profile in a browser. This will help you contact me.
 
 ### Delete Sample Data w/o Categories
 Delete all sample data _excluding_ categories. Categories will not be deleted! This procedure has no rollback! After the test data is deleted, the button will no longer be active.
@@ -75,7 +87,7 @@ Delete all sample data _excluding_ categories. Categories will not be deleted! T
 ### Delete All Data with Categories
 Remove everything _including_ categories. This procedure has no rollback! After the test data is deleted, the button will no longer be active.
 
-### Why I have 2 buttons for deleting sample data instead of 1?
+### Why do I have 2 buttons for deleting sample data instead of 1?
 I did this because adding categories personally seems to me quite boring and annoying - therefore, it always seemed easier to me to slightly edit existing ones than to introduce them completely from scratch. Therefore, the user might want to delete all test data - but leave the categories.
 
 ## Accounts
@@ -120,7 +132,7 @@ Enter the amount. If you make expenses, there is no need to put a minus, it will
 
 Select a category. You can use the filter at the top left of the window to quickly find the category you want. Just click on the selected category - it will change its colour - and confirm your choice.
 
-*New feature* Now you can split Transactions for differents Categories. Click "Split" button, enter Amount and choose Category for every subtransaction.
+*New feature* Now you can split Transactions for different Categories. Click the "Split" button, enter Amount and choose Category for every subtransaction.
 
 You can add a payer or notes if needed.
 
@@ -168,7 +180,7 @@ To add a category to the budget, you need to click the Select Categories button.
 
 Please note - as soon as you put the check-box, the Repeat and from what time fields will be automatically filled in. They are needed for the correct calculation of the Forecast.
 
-To remove a category from the budget, you need to click the Select categories button again and uncheck the checkbox.
+To remove a category from the budget, you need to click the Select Categories button again and uncheck the checkbox.
 
 ## Planner
 
@@ -178,49 +190,48 @@ You can edit this transaction and change its type - for example, to Confirmed. A
 
 ## Reports
 
-Just a set of graphs that allow you to visualize some data. I know FileMaker's built-in charts are terrible - and you know that. Someday in the future, I will make beautiful interactive graphics in the web viewer. When realties - but not today. Today it was interesting for me to do everything with regular means.
+Just a set of graphs that allow you to visualize some data. I know FileMaker's built-in charts are terrible - and you know that. Someday in the future, I will make beautiful interactive graphics in the web viewer. When realities - but not today. Today it was interesting for me to do everything with regular means.
 
 ### Income
 
 Shows how much funds were received in a specific month. Select the year and month using the buttons on the left.
 
-### Top 3 Income
+### Top 3 Income for last 12 month
 
 Identifies the top 3 earning categories and shows the change in your income for those categories for last year.
 
-### Expense
+### Expense for selected Month (all Categories)
 
 Shows how much money was spent in a specific month. Select the year and month using the buttons on the left.
 
-### Top 10 Expense
+### Expense for selected Month (main Categories only)
 
-Identifies the top 10 expense categories and shows the change in expenses for these categories for last year.
+The same, but only for main categories. For example: if you have category "Food", and sub-categories "Groceries", "Restoraunts", etc. - the report will show only the main category, which will include expenses from all subcategories.
 
-### Budget Chart
+
+### Top 5 for last 12 month
+
+Identifies the top 5 expense categories and shows the change in expenses for these categories for last year.
+
+### Expenses by Paye
+Well, that's obvious.
+
+### Budget
 
 Simple chart for your budget.
 
-### Budget Control
+### Budget Deviation
 
-Compares your budget plans to ruthless reality. On the left - how much more you can spend if you stick to the budget, on the right - how much you have already spent. Only the current month is displayed.
+Compares your budget plans to ruthless reality. On the left - how much more you can spend if you stick to the budget, on the right - how much you have already spent. Only the selected month is displayed.
 
-### Accounts
+### Accounts Balances
 
 A list of your accounts with an indication of the balance on each in the BASIC currency. Allows you to quickly estimate how much money you have in general and whether you can order yourself a pizza today - or do you still need to stop programming and find yourself, finally, a normal job.
 
-### Balance
+### Compare Income and Expenses
 
 Compares your income and expenses monthly.
 
-### Forecast
-
-To be honest, it was all for the sake of this, but the implementation was not as impressive as I had hoped. Let's say you have some amount in your accounts. Let's also assume that you have planned your budget in terms of expenses and income. Let's say that you have planned your large (or not so) purchases and entered them into the Planner. Thus, you can get a forecast for each of the next 12 months, based on this data:
-
-The balance on your accounts at the end of the previous month + your income for the current month (budget and planned) - your expenses for the current month (budget and planned).
-
-And so starting from this month for a year ahead.
-
-This way, you can see how your spending or income plans affect your account balances and better plan for your future.
 
 ## Thank You
 Thanks for using this app and I hope you find it as useful as I do!
